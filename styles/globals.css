@@ -18,9 +18,18 @@ hr {
 
 .css-1g2ualo-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
   min-height: fit-content !important;
+  padding: 0 !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content {
+  margin: 0 !important;
 }
 
 .css-o4b71y-MuiAccordionSummary-content.Mui-expanded {
+  /* margin: 0 !important; */
+}
+
+.css-1g2ualo-MuiButtonBase-root-MuiAccordionSummary-root{
   margin: 0 !important;
 }
 

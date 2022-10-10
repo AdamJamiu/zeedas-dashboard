@@ -24,31 +24,31 @@ const SideNav = () => {
 
             <div className='pb-7 h-fit pt-[3em] flex flex-col items-center'>
 
-                <IconButton size='medium' color="inherit" className='mb-5 bg-glass text-white hover:bg-glss'>
+                <IconButton size='medium' color="inherit" className='mb-3 bg-glass text-white hover:bg-glss'>
                     <UnfoldMoreIcon fontSize='inherit' />
                 </IconButton>
 
-                <IconButton size='medium' color="inherit" className='mb-5 bg-transparent text-white rounded-[.5em] hover:bg-glass'>
+                <IconButton size='medium' color="inherit" className='mb-3 bg-transparent text-white rounded-[.5em] hover:bg-glass'>
                     <Image src={search} height={22} width={22} />
                 </IconButton>
 
-                <IconButton size='medium' color="inherit" className='mb-5 text-white rounded-[.5em] hover:bg-glass'>
+                <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
                     <Image src={home} height={22} width={22} />
                 </IconButton>
 
-                <IconButton size='medium' color="inherit" className='mb-5 text-white rounded-[.5em] hover:bg-glass'>
+                <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
                     <Image src={inbox} height={22} width={22} />
                 </IconButton>
 
-                <IconButton size='medium' color="inherit" className='mb-5 bg-[#23B3E8] text-white rounded-[.5em] hover:bg-glass'>
+                <IconButton size='medium' color="inherit" className='mb-3 bg-[#23B3E8] text-white rounded-[.5em] hover:bg-glass'>
                     <Image src={project} height={20} width={22} />
                 </IconButton>
 
-                <IconButton size='medium' color="inherit" className='mb-5 text-white rounded-[.5em] hover:bg-glass'>
+                <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
                     <Image src={people} height={20} width={22} />
                 </IconButton>
 
-                <IconButton size='medium' color="inherit" className='mb-5 text-white rounded-[.5em] hover:bg-glass'>
+                <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
                     <Image src={wallet} height={22} width={22} />
                 </IconButton>
 

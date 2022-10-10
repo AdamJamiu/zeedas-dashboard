@@ -54,24 +54,52 @@ function Sidebar() {
                         >
                             <p className='text-[#23B3E8] font-bold'>Overview</p>
                         </AccordionSummary>
-                        <AccordionDetails className='border-l pb-0 flex flex-col justify-stretch w-full'>
-                            <div className='hover:text-[#23B3E8] border-l-2 border-[#23B3E8] p-3'>
-                                <span className='w-[max-content] p-3'>Project Status</span>
+                        <AccordionDetails className='border-l border-light pb-0 flex flex-col mt-2 justify-stretch w-full'>
+
+                            <div className='hover:text-[#23B3E8] border-l-2 border-[#23B3E8] px-3 py-1'>
+                                <span className='text-greyTxt w-[max-content] p-3'>Project Status</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] p-3 cursor-pointer'>
-                                <span className='w-[max-content] p-3 '>Planning</span>
+                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
+                                <span className='text-greyTxt w-[max-content] px-3 '>Planning</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] p-3 cursor-pointer'>
-                                <span className='w-[max-content] p-3 '>Teamwork</span>
+                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
+                                <span className='text-greyTxt w-[max-content] p-3 '>Teamwork</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] p-3 cursor-pointer'>
-                                <span className='w-[max-content] p-3 '>Team health</span>
+                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
+                                <span className='text-greyTxt w-[max-content] p-3 '>Team health</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] p-3 cursor-pointer'>
-                                <span className='w-[max-content] p-3'>Investment</span>
+                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
+                                <span className='text-greyTxt w-[max-content] p-3'>Investment</span>
                             </div>
                         </AccordionDetails>
                     </Accordion>
+
+                    <div className='pl-4'>
+                        <div className='my-5 cursor-pointer'>
+                            <p className='hover:text-[#23B3E8] text-greyTxt'>Action center</p>
+                        </div>
+
+                        <div className='my-5 cursor-pointer'>
+                            <p className='hover:text-[#23B3E8] text-greyTxt'>Apps</p>
+                        </div>
+
+                        <div className='my-5 cursor-pointer'>
+                            <p className='hover:text-[#23B3E8] text-greyTxt'>Tasks</p>
+                        </div>
+
+                        <div className='my-5 cursor-pointer'>
+                            <p className='hover:text-[#23B3E8] text-greyTxt'>Code review</p>
+                        </div>
+
+                        <div className='my-5 cursor-pointer'>
+                            <p className='hover:text-[#23B3E8] text-greyTxt'>QA review</p>
+                        </div>
+
+                        <div className='my-5 cursor-pointer'>
+                            <p className='hover:text-[#23B3E8] text-greyTxt'>Notes</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

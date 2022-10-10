@@ -10,6 +10,7 @@ module.exports = {
         glassBg: "rgba(255, 255, 255, 0.05)",
         primary: " rgba(247, 247, 247, 0.9)",
         greyTxt: "rgba(3, 41, 61, 0.5)",
+        light: "rgba(3, 41, 61, 0.1)",
       },
     },
 
