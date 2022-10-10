@@ -17,7 +17,7 @@ import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 
 
 const SideNav = () => {
-
+    
     return (
 
         <div className='px-5 h-full w-[100px] bg-[#052231] overflow-y-hidde'>

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Image from 'next/image';
 import React from 'react'
 import fcmb from "../../public/fcmb.svg"
@@ -7,13 +8,13 @@ import closed from "../../public/closed.svg"
 import Accordion from '@mui/material/Accordion';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
-import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 // material icons
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 
 function Sidebar() {
+    const [active, setActive] = useState("pro-status")
 
     const [expanded, setExpanded] = React.useState(false);
 
@@ -56,20 +57,28 @@ function Sidebar() {
                         </AccordionSummary>
                         <AccordionDetails className='border-l border-light pb-0 flex flex-col mt-2 justify-stretch w-full'>
 
-                            <div className='hover:text-[#23B3E8] border-l-2 border-[#23B3E8] px-3 py-1'>
-                                <span className='text-greyTxt w-[max-content] p-3'>Project Status</span>
+                            <div className={`${active === 'pro-status' ? 'font-bold border-l-2 border-[#23B3E8] text-[#23B3E8]' : 'text-greyTxt'} cursor-pointer px-3 py-1 `}>
+                                <span className='w-[max-content] p-3'>Project Status</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
-                                <span className='text-greyTxt w-[max-content] px-3 '>Planning</span>
+
+                            <div className={`${active === 'planning' ? 'font-bold border-l-2 border-[#23B3E8] text-[#23B3E8]' : 'text-greyTxt'} cursor-pointer px-3 py-1 `}
+                            onClick={() => setActive('planning')}>
+                                <span className='w-[max-content] px-3 '>Planning</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
-                                <span className='text-greyTxt w-[max-content] p-3 '>Teamwork</span>
+
+                            <div className={`${active === 'teamwork' ? 'font-bold border-l-2 border-[#23B3E8] text-[#23B3E8]' : 'text-greyTxt'} cursor-pointer px-3 py-1 `}
+                                onClick={() => setActive('teamwork')}>
+                                <span className='w-[max-content] p-3 '>Teamwork</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
-                                <span className='text-greyTxt w-[max-content] p-3 '>Team health</span>
+
+                            <div className={`${active === 'team-health' ? 'font-bold border-l-2 border-[#23B3E8] text-[#23B3E8]' : 'text-greyTxt'} cursor-pointer px-3 py-1 `}
+                                onClick={() => setActive('team-health')}>
+                                <span className='w-[max-content] p-3 '>Team health</span>
                             </div>
-                            <div className='hover:text-[#23B3E8] px-3 py-1 cursor-pointer'>
-                                <span className='text-greyTxt w-[max-content] p-3'>Investment</span>
+
+                            <div className={`${active === 'investment' ? 'font-bold border-l-2 border-[#23B3E8] text-[#23B3E8]' : 'text-greyTxt'} cursor-pointer px-3 py-1 `}
+                                onClick={() => setActive('investment')}>
+                                <span className='w-[max-content] p-3'>Investment</span>
                             </div>
                         </AccordionDetails>
                     </Accordion>
