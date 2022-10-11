@@ -8,6 +8,7 @@ import purpleDot from "../public/purpleDot.svg";
 import blackDot from "../public/blackDot.svg";
 import greyDot from "../public/greyDot.svg";
 import { MyBar } from "../components/elements/chart"
+import graph from "../public/graph.svg";
 
 
 const MainPage = () => {
@@ -62,7 +63,7 @@ const MainPage = () => {
                     {/* grid two */}
                     <div className='grid-two bg-white p-4 rounded'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
-                            <p className=''>Average Ticket Duration</p>
+                            <p className='w-[max-content]'>Average Ticket Duration</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
                         </div>
 
@@ -107,6 +108,40 @@ const MainPage = () => {
                                 <span className='font-black text-xl'>4</span>
                                 <span className='ml-1 text-sm text-greyTxt'>total weeks worked</span>
                             </div>
+                        </div>
+
+                        <div className='w-full mt-4'>
+                            <Image src={graph} width={400} height={50} alt="" />
+                        </div>
+
+                        {/*  */}
+                        <div className='flex flex-row mt-1 '>
+
+                            <div className='flex flex-col gap-3 flex-1 w-full'>
+                                <div className='flex justify-start flex-row w-[max-content] items-center gap-2'>
+                                    <Image src={greenDot} width={15} height={15} alt="" />
+                                    <p className=''>25% New work</p>
+                                </div>
+
+                                <div className='flex-1 w-100 flex justify-start flex-row items-center gap-2'>
+                                    <Image src={blackDot} width={15} height={15} alt="" />
+                                    <p className=''>40% Refactor</p>
+                                </div>
+                            </div>
+
+                            <div className='flex flex-col flex-1 gap-3 w-full'>
+                                <div className=' flex justify-start items-center flex-row  gap-2'>
+                                    <Image src={blackDot} width={15} height={15} alt="" />
+                                    <p className=''>Idle Time</p>
+                                </div>
+
+                                <div className=' flex justify-start items-center flex-row gap-2'>
+                                    <Image src={purpleDot} width={15} height={15} alt="" />
+                                    <p className=''>Deployment</p>
+                                </div>
+                            </div>
+
+
                         </div>
                     </div>
 
