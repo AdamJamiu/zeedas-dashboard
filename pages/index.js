@@ -27,10 +27,11 @@ export default function Home() {
         </div>
 
         <div className='py-[2em] px-[1em] bg-primary laptop:ml-[301px] ml-0'>
-          <div className="w-full text-right text-greyTxt">
+          <div className="w-full text-right text-greyTxt p-4">
             <MoreHorizIcon color="inherit" />
           </div>
           <Main />
+          
         </div>
       </div>
 

@@ -172,6 +172,15 @@ const MainPage = () => {
                     </div>
                 </div>
 
+                {/*  */}
+                <div className='w-full flex flex-row items-center justify-between my-10'>
+                    <p className='font-black text-xl'>Planning</p>
+                    <select className='bg-white rounded-lg w-[150px] p-2'>
+                        <option>All time</option>
+                        <option>All time</option>
+                    </select>
+                </div>
+
             </div>
         </div>
     )
