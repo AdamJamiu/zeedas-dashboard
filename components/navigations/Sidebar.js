@@ -23,12 +23,14 @@ function Sidebar() {
     };
 
     return (
-        <div className='flex flex-col py-10 px-5 items-center flex-nowrap bg-white'>
-            <div className='gap-3 items-center w-[max-content] flex-nowrap items-center flex flex-row'>
-                <ArrowBackIosIcon className='text-[15px] cursor-pointer' />
+        <div className='flex justify-start flex-col py-10 px-5 items-center flex-nowrap bg-white'>
+            <div className='gap-3 items-center w-[max-content] flex-nowrap flex flex-row'>
+                <div>
+                    <ArrowBackIosIcon className='text-[14px] cursor-pointer' />
+                </div>
                 <div className='flex flex-row items-center'>
                     <Image src={fcmb} height={25} width={25} alt="" />
-                    <p className="font-black text-sm pl-3 w-[max-content]">FCMB: Mobile</p>
+                    <span className="font-black text-sm pl-3 w-[max-content]">FCMB: Mobile</span>
                     <span className='font-black pl-3'>....</span>
                 </div>
             </div>

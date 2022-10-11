@@ -11,25 +11,25 @@ import wallet from "../../public/wallet.svg";
 
 import { IconButton } from '@mui/material';
 
-import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 // material icons
-import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const SideNav = () => {
-    
+
     return (
 
-        <div className='px-5 h-full  w-[100px] bg-[#052231] overflow-y-hidden'>
+        <div className='flex flex-col divide-zinc-700 divide-y px-5 h-full w-[100px] bg-[#052231] overflow-y-hidden'>
 
-            <div className='pb-7 h-fit pt-[3em] flex flex-col items-center'>
+            <div className='pb-7 h-fit pt-[1em] flex flex-col items-center'>
 
                 <IconButton size='medium' color="inherit" className='mb-3 bg-glass text-white hover:bg-glss'>
                     <UnfoldMoreIcon fontSize='inherit' />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 bg-transparent text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={search} height={22} width={22} alt=""/>
+                    <Image src={search} height={22} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
@@ -37,40 +37,44 @@ const SideNav = () => {
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={inbox} height={22} width={22} alt=""/>
+                    <Image src={inbox} height={22} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 bg-[#23B3E8] text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={project} height={20} width={22} alt=""/>
+                    <Image src={project} height={20} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={people} height={20} width={22} alt=""/>
+                    <Image src={people} height={20} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={wallet} height={22} width={22} alt=""/>
+                    <Image src={wallet} height={22} width={22} alt="" />
                 </IconButton>
 
             </div>
 
-            <div className='py-3 h-fit flex flex-col justify-center items-stretch'>
-                <IconButton size='small' color="inherit" className='text-sm mb-5 bg-[#23B3E8] text-white hover:bg-[#23B3E8]'>
+            <div className='py-3 h-fit text-xw flex flex-col justify-center items-stretch'>
+                <IconButton size='inherit' color="inherit" className='text-xs mb-5 bg-[#23B3E8] text-white hover:bg-[#23B3E8]'>
                     PN
                 </IconButton>
 
-                <IconButton size='small' color="inherit" className='mb-5 text-sm bg-[#4DBD98] text-white hover:bg-[#4DBD98]'>
+                <IconButton size='inherit' color="inherit" className='text-xs mb-5 text-sm bg-[#4DBD98] text-white hover:bg-[#4DBD98]'>
                     JI
                 </IconButton>
 
-                <IconButton size='small' color="inherit" className='text-sm mb-5 bg-[#3D43A2] text-white hover:bg-[#3D43A2]'>
+                <IconButton size='inherit' color="inherit" className='text-xs mb-5 bg-[#3D43A2] text-white hover:bg-[#3D43A2]'>
                     LG
                 </IconButton>
 
-                <IconButton size='small' color="inherit" className='text-sm mb-5 bg-[#F15832] text-white hover:bg-[#F15832]'>
+                <IconButton size='inherit' color="inherit" className='text-xs mb-5 bg-[#F15832] text-white hover:bg-[#F15832]'>
                     AW
                 </IconButton>
 
+            </div>
+
+            <div className='mt-auto'>
+                <ArrowForwardIosIcon />
             </div>
 
         </div>
