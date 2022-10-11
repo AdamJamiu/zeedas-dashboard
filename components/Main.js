@@ -4,68 +4,153 @@ import OverallSummary from './elements/Tables/OverallSum';
 import MyRecentDesigns from './elements/Tables/MyRecentDes';
 import RecentProjects from './elements/Tables/RecentProject';
 import RecentProposals from './elements/Tables/RecentProposals';
+import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import NorthOutlinedIcon from '@mui/icons-material/NorthOutlined';
+import chart from "../public/chart.svg";
+import greenDot from "../public/greenDot.svg";
+import blueDot from "../public/blueDot.svg";
+import purpleDot from "../public/purpleDot.svg";
+import blackDot from "../public/blackDot.svg";
 
 
 const MainPage = () => {
     return (
-        <div className='pb-4 h-[max-content]'>
-            <div className='wrapper flex-wrap flex mobile:mb-10 mobile:flex-row flex-col justify-between items-center w-full gap-x-3 gap-y-5 mb-[5em] mt-7'>
+        <div className='p-4 h-[max-content]'>
+            <div className='flex-wrap flex  mb-[5em] mt-7'>
 
-                {/* My projects */}
-                <div className='flex-1 cursor-pointer hover:scale-110 w-[100%] transition-all hover:transition-all bg-[rgba(242,48,48,0.25)] py-3 px-5 rounded-lg shadow-md'>
-                    <div className=' flex flex-row items-center w-full justify-between mb-2'>
-                        <p className='font-bold  text-[#0E0E2C]'>My Projects</p>
-                        {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={stack} width={30} height={30} /> */}
-                    </div>
-                    {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={Group42} width={35} height={35} /> */}
-
-                </div>
-                {/* proposal */}
-
-                <div className='flex-1 w-[100%] transition-all cursor-pointer hover:transition-all hover:scale-110 bg-[rgba(141,8,245,0.25)] py-3 px-5 rounded-lg shadow-md'>
-                    <div className='flex flex-row items-center w-full justify-between mb-2'>
-                        <p className='font-bold text-[#0E0E2C]'>My Proposals</p>
-                        {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={copy} width={30} height={30} /> */}
-                    </div>
-                    {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={Group25} width={35} height={35} /> */}
-
+                <div className='w-full flex flex-row items-center justify-between'>
+                    <p className='font-black text-xl'>Project stats</p>
+                    <select className='bg-white rounded-lg w-[150px] p-2'>
+                        <option>All time</option>
+                        <option>All time</option>
+                    </select>
                 </div>
 
-                {/* My designs */}
+                <div className='pro-stat-container'>
 
-                <div className='flex-1 w-[100%] hover:scale-110 cursor-pointer transition-all hover:transition-all bg-[rgba(61,191,145,0.25)] py-3 px-5 rounded-lg shadow-md'>
-                    <div className='flex flex-row items-center w-full justify-between mb-2'>
-                        <p className='font-bold text-[#0E0E2C]'>My Designs</p>
-                        {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={archive} width={30} height={30} /> */}
+                    <div className='grid-one bg-white p-4 rounded'>
+                        <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
+                            <p className=''>Average PR size</p>
+                            <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
+                        </div>
+
+
+                        <div className='flex flex-row gap-5 mt-5'>
+
+                            <div>
+                                <div className=''>
+                                    <span className='font-black text-xl'>268</span>
+                                    <span className='ml-1 text-sm text-greyTxt'>Lines</span>
+                                </div>
+                                <p className='text-sm text-greyTxt font-bold'>Line Change</p>
+
+                                <div className='mt-5 gap-1 p-2 bg-greenOpa text-[#4DBD98] w-[fit-content] flex flex-row items-center'>
+                                    <NorthOutlinedIcon className="text-sm" color='inherit' />
+                                    <p className='text-sm font-bold'>24%</p>
+                                </div>
+                            </div>
+                            {/* ----- */}
+                            <div>
+                                <div className=''>
+                                    <span className='font-black text-xl'>240</span>
+                                    <span className='ml-1 text-sm text-greyTxt'>kb</span>
+                                </div>
+                                <p className='text-sm text-greyTxt font-bold'>Size</p>
+                            </div>
+
+                        </div>
+
                     </div>
-                    {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={Group15} width={35} height={35} /> */}
 
-                </div>
-                {/* My drawings */}
+                    {/* grid two */}
+                    <div className='grid-two bg-white p-4 rounded'>
+                        <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
+                            <p className=''>Average Ticket Duration</p>
+                            <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
+                        </div>
 
-                <div className='flex-1 w-[100%] hover:scale-110 transition-all cursor-pointer hover:transition-all bg-[rgba(255,102,0,0.25)] py-3 px-5 rounded-lg shadow-md'>
-                    <div className='flex flex-row items-center w-full justify-between mb-2'>
-                        <p className='font-bold text-[#0E0E2C] '>My Drawings</p>
-                        {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={pentool} width={30} height={30} /> */}
+
+                        <div className='flex flex-row gap-5 mt-5'>
+
+                            <div>
+                                <div className=''>
+                                    <span className='font-black text-xl'>36</span>
+                                    <span className='ml-1 text-sm text-greyTxt'>hours</span>
+                                </div>
+                                <p className='text-sm text-greyTxt font-bold'>Hours worked</p>
+
+                                <div className='mt-5 gap-1 p-2 bg-redOpa text-[#F15832] w-[fit-content] flex flex-row items-center'>
+                                    <NorthOutlinedIcon className="text-sm" color='inherit' />
+                                    <p className='text-sm font-bold'>79%</p>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                    {/* <Image alt="logo" className='text-[rgba(242,48,48,0.5)]' src={Group28} width={35} height={35} /> */}
+                    {/* grid three */}
 
+                    <div className='grid-three bg-white p-4 rounded'>
+                        <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
+                            <p className=''>Average Ticket Duration</p>
+                            <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
+                        </div>
+
+                        <div className='flex gap-3 flex-row'>
+                            <div className='mt-5'>
+                                <span className='font-black text-xl'>968</span>
+                                <span className='ml-1 text-sm text-greyTxt'>hours</span>
+                            </div>
+
+                            <div className='mt-5'>
+                                <span className='font-black text-xl'>54</span>
+                                <span className='ml-1 text-sm text-greyTxt'>tickets</span>
+                            </div>
+
+                            <div className='mt-5'>
+                                <span className='font-black text-xl'>4</span>
+                                <span className='ml-1 text-sm text-greyTxt'>total weeks worked</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='grid-four bg-white p-4'>
+                        <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
+                            <p className=''>Cycle Time</p>
+                            <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
+                        </div>
+
+                        <div className='mt-5 text-left items-center justify-center gap-10 flex-row flex'>
+                            <Image src={chart} width={200} height={200} alt="" />
+
+                            <div className='flex flex-col gap-5'>
+
+                                <div className='flex justify-start flex-row w-[max-content] items-center gap-2'>
+                                    <Image src={greenDot} width={15} height={15} alt="" />
+                                    <p className=''>Coding</p>
+                                </div>
+
+                                <div className='flex justify-start flex-row w-[max-content] items-center gap-2'>
+                                    <Image src={blueDot} width={15} height={15} alt="" />
+                                    <p className=''>Code Review</p>
+                                </div>
+
+                                <div className='flex justify-start items-center flex-row w-[max-content] gap-2'>
+                                    <Image src={blackDot} width={15} height={15} alt="" />
+                                    <p className=''>Idle Time</p>
+                                </div>
+
+                                <div className='flex justify-start items-center flex-row w-[max-content] gap-2'>
+                                    <Image src={purpleDot} width={15} height={15} alt="" />
+                                    <p className=''>Deployment</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                    <div className='grid-five'>
+                        <h1>Grid five</h1>
+                    </div>
                 </div>
 
             </div>
-
-            {/* Tables */}
-            <div className='flex flex-row flex-wrap justify-between items-stretch mb-10 gap-5'>
-                <OverallSummary />
-                <MyRecentDesigns />
-            </div>
-
-            {/* second line table */}
-            <div className='flex flex-row flex-wrap justify-between items-stretch gap-y-5 gap-5 mb-10 mt-10'>
-                <RecentProjects />
-                <RecentProposals />
-            </div>
-
         </div>
     )
 }

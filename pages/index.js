@@ -4,6 +4,8 @@ import SideNav from '../components/navigations/Sidenav';
 import Main from '../components/Main';
 import Navbar from '../components/navigations/Navbar';
 import Sidebar from '../components/navigations/Sidebar';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+
 
 export default function Home() {
 
@@ -25,7 +27,9 @@ export default function Home() {
         </div>
 
         <div className='py-[2em] px-[1em] bg-primary laptop:ml-[301px] ml-0'>
-          <Navbar setIsResponsive={setIsResponsive} />
+          <div className="w-full text-right text-greyTxt">
+            <MoreHorizIcon color="inherit" />
+          </div>
           <Main />
         </div>
       </div>

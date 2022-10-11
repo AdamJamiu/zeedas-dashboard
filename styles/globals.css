@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+select {
+  cursor: pointer;
+}
+
 /*  */
 body {
   font-family: "Nunito", sans-serif;
@@ -29,10 +33,45 @@ hr {
   /* margin: 0 !important; */
 }
 
-.css-1g2ualo-MuiButtonBase-root-MuiAccordionSummary-root{
+.css-1g2ualo-MuiButtonBase-root-MuiAccordionSummary-root {
   margin: 0 !important;
 }
 
 .css-15v22id-MuiAccordionDetails-root {
   padding: 0 !important;
+}
+
+/* project stats grid container */
+.pro-stat-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: 1fr fr;
+  grid-template-areas:
+    "grid-one grid-two grid-three"
+    "grid-four grid-four grid-five";
+  grid-gap: 1em;
+  width: 100%;
+  height: 100%;
+  margin-top: 2em;
+}
+
+/* project stats grid items */
+.grid-one {
+  grid-area: grid-one;
+}
+
+.grid-two {
+  grid-area: grid-two;
+}
+
+.grid-three {
+  grid-area: grid-three;
+}
+
+.grid-four {
+  grid-area: grid-four;
+}
+
+.grid-five {
+  grid-area: grid-five;
 }
