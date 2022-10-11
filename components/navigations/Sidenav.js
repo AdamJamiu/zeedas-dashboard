@@ -17,7 +17,7 @@ import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 
 
 const SideNav = () => {
-    
+
     return (
 
         <div className='px-5 h-full w-[100px] bg-[#052231] overflow-y-hidde'>
@@ -29,27 +29,27 @@ const SideNav = () => {
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 bg-transparent text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={search} height={22} width={22} />
+                    <Image src={search} height={22} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={home} height={22} width={22} />
+                    <Image src={home} height={22} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={inbox} height={22} width={22} />
+                    <Image src={inbox} height={22} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 bg-[#23B3E8] text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={project} height={20} width={22} />
+                    <Image src={project} height={20} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={people} height={20} width={22} />
+                    <Image src={people} height={20} width={22} alt="" />
                 </IconButton>
 
                 <IconButton size='medium' color="inherit" className='mb-3 text-white rounded-[.5em] hover:bg-glass'>
-                    <Image src={wallet} height={22} width={22} />
+                    <Image src={wallet} height={22} width={22} alt="" />
                 </IconButton>
 
             </div>

@@ -27,7 +27,7 @@ function Sidebar() {
             <div className='gap-3 items-center w-[max-content] flex-nowrap items-center flex flex-row'>
                 <ArrowBackIosIcon className='text-[15px] cursor-pointer' />
                 <div className='flex flex-row items-center'>
-                    <Image src={fcmb} height={25} width={25} />
+                    <Image src={fcmb} height={25} width={25} alt="" />
                     <p className="font-black text-sm pl-3 w-[max-content]">FCMB: Mobile</p>
                     <span className='font-black pl-3'>....</span>
                 </div>
@@ -43,9 +43,6 @@ function Sidebar() {
                 </div>
 
                 <div className='mt-10'>
-                    {/* <div className='flex items-center font-bold text-greyTxt flex-row justify-between'>
-                        <Image src={closed} height={18} width={18} />
-                    </div> */}
                     <Accordion elevation={0} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
@@ -62,7 +59,7 @@ function Sidebar() {
                             </div>
 
                             <div className={`${active === 'planning' ? 'font-bold border-l-2 border-[#23B3E8] text-[#23B3E8]' : 'text-greyTxt'} cursor-pointer px-3 py-1 `}
-                            onClick={() => setActive('planning')}>
+                                onClick={() => setActive('planning')}>
                                 <span className='w-[max-content] px-3 '>Planning</span>
                             </div>
 
