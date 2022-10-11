@@ -6,6 +6,7 @@ import greenDot from "../public/greenDot.svg";
 import blueDot from "../public/blueDot.svg";
 import purpleDot from "../public/purpleDot.svg";
 import blackDot from "../public/blackDot.svg";
+import greyDot from "../public/greyDot.svg";
 import { MyBar } from "../components/elements/chart"
 
 
@@ -146,9 +147,23 @@ const MainPage = () => {
 
                     {/* grid five */}
                     <div className='grid-five bg-white p-4 rounded'>
-                        <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
-                            <p className=''>Idle Time Breakdown</p>
-                            <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />  
+                        <div className='justify-between items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
+                            <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row'>
+                                <p className=''>Idle Time Breakdown</p>
+                                <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
+                            </div>
+
+                            <div className='items-center gap-3 flex flex-row pr-2'>
+                                <div className='items-center gap-3 flex flex-row'>
+                                    <Image src={greyDot} width={15} height={15} alt="" />
+                                    <p>Idle</p>
+                                </div>
+
+                                <div className='items-center gap-3 flex flex-row'>
+                                    <Image src={greenDot} width={15} height={15} alt="" />
+                                    <p>Idle</p>
+                                </div>
+                            </div>
                         </div>
 
                         <div className=''>
