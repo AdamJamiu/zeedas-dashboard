@@ -1,9 +1,4 @@
 import Image from 'next/image';
-import Navbar from './navigations/Navbar';
-import OverallSummary from './elements/Tables/OverallSum';
-import MyRecentDesigns from './elements/Tables/MyRecentDes';
-import RecentProjects from './elements/Tables/RecentProject';
-import RecentProposals from './elements/Tables/RecentProposals';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import NorthOutlinedIcon from '@mui/icons-material/NorthOutlined';
 import chart from "../public/chart.svg";
@@ -11,6 +6,7 @@ import greenDot from "../public/greenDot.svg";
 import blueDot from "../public/blueDot.svg";
 import purpleDot from "../public/purpleDot.svg";
 import blackDot from "../public/blackDot.svg";
+import { MyBar } from "../components/elements/chart"
 
 
 const MainPage = () => {
@@ -112,6 +108,8 @@ const MainPage = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* grid four */}
                     <div className='grid-four bg-white p-4'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Cycle Time</p>
@@ -141,12 +139,21 @@ const MainPage = () => {
                                 <div className='flex justify-start items-center flex-row w-[max-content] gap-2'>
                                     <Image src={purpleDot} width={15} height={15} alt="" />
                                     <p className=''>Deployment</p>
-                                </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className='grid-five'>
-                        <h1>Grid five</h1>
+
+                    {/* grid five */}
+                    <div className='grid-five bg-white p-4 rounded'>
+                        <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
+                            <p className=''>Idle Time Breakdown</p>
+                            <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />  
+                        </div>
+
+                        <div className=''>
+                            <MyBar />
+                        </div>
                     </div>
                 </div>
 
