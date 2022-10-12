@@ -95,12 +95,12 @@ export const MyBar = () => {
             {
                 label: '',
                 fill: false,
-                data: [55, 25, 20],
+                data: [47, 25, 25],
                 backgroundColor: 'rgba(3, 41, 61, 0.1)',
             },
             {
                 label: '',
-                data: [30, 40, 30],
+                data: [25, 30, 45],
                 backgroundColor: 'rgba(77, 189, 152, 1)',
             },
 
@@ -108,6 +108,6 @@ export const MyBar = () => {
     };
 
     return (<ErrorBoundary>
-        <Bar data={data} options={options} />;
+        <Bar data={data} options={options} />
     </ErrorBoundary>)
 }

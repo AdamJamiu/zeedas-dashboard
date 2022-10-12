@@ -28,7 +28,7 @@ const MainPage = () => {
                 <div className='pro-stat-container'>
 
                     {/* Grid one */}
-                    <div className='grid-one bg-white px-4 py-2 rounded-xl'>
+                    <div className='grid-one bg-white p-4 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Average PR size</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -63,7 +63,7 @@ const MainPage = () => {
                     </div>
 
                     {/* grid two */}
-                    <div className='grid-two bg-white px-4 py-2 rounded-xl'>
+                    <div className='grid-two bg-white p-4 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className='w-[max-content]'>Average Ticket Duration</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -89,7 +89,7 @@ const MainPage = () => {
                     </div>
                     {/* grid three */}
 
-                    <div className='grid-three bg-white px-4 py-2 rounded-xl'>
+                    <div className='grid-three bg-white p-4  rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Average Ticket Duration</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -122,24 +122,24 @@ const MainPage = () => {
                             <div className='flex flex-col gap-3 flex-1 w-full'>
                                 <div className='flex justify-start flex-row w-[max-content] items-center gap-2'>
                                     <Image src={greenDot} width={15} height={15} alt="" />
-                                    <p className=''>25% New work</p>
+                                    <p className='font-bold'>25% <span className='text-greyTxt'>New work</span> </p>
                                 </div>
 
                                 <div className='flex-1 w-100 flex justify-start flex-row items-center gap-2'>
                                     <Image src={blackDot} width={15} height={15} alt="" />
-                                    <p className=''>40% Refactor</p>
+                                    <p className=''>40% <span className='text-greyTxt'>Refactor</span></p>
                                 </div>
                             </div>
 
                             <div className='flex flex-col flex-1 gap-3 w-full'>
                                 <div className='flex justify-start items-center flex-row gap-2'>
                                     <Image src={blackDot} width={15} height={15} alt="" />
-                                    <p className=''>15% Rework</p>
+                                    <p className=''>15% <span className='text-greyTxt'>Rework</span></p>
                                 </div>
 
                                 <div className='flex justify-start items-center flex-row gap-2'>
                                     <Image src={orangeDot} width={15} height={15} alt="" />
-                                    <p className=''>20% Bugs </p>
+                                    <p className=''>20% <span className='text-greyTxt'>Bugs</span> </p>
                                 </div>
                             </div>
 
@@ -148,7 +148,7 @@ const MainPage = () => {
                     </div>
 
                     {/* grid four */}
-                    <div className='grid-four bg-white px-4 py-2 rounded-xl'>
+                    <div className='grid-four bg-white p-4 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Cycle Time</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -183,7 +183,7 @@ const MainPage = () => {
                     </div>
 
                     {/* grid five */}
-                    <div className='grid-five bg-white px-4 py-2 rounded-xl'>
+                    <div className='grid-five bg-white p-4 rounded-xl'>
                         <div className='justify-between items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row'>
                                 <p className=''>Idle Time Breakdown</p>

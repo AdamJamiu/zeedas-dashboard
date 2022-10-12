@@ -54,7 +54,7 @@ const SideNav = () => {
 
             </div>
 
-            <div className='py-3 h-fit text-xw flex flex-col justify-center items-stretch'>
+            <div className='py-3 h-fit text-xs flex flex-col justify-center items-stretch'>
                 <IconButton size='inherit' color="inherit" className='text-xs mb-5 bg-[#23B3E8] text-white hover:bg-[#23B3E8]'>
                     PN
                 </IconButton>
