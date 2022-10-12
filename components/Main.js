@@ -6,6 +6,7 @@ import greenDot from "../public/greenDot.svg";
 import blueDot from "../public/blueDot.svg";
 import purpleDot from "../public/purpleDot.svg";
 import blackDot from "../public/blackDot.svg";
+import orangeDot from "../public/orangeDot.svg";
 import greyDot from "../public/greyDot.svg";
 import { MyBar } from "../components/elements/chart"
 import graph from "../public/graph.svg";
@@ -14,7 +15,7 @@ import graph from "../public/graph.svg";
 const MainPage = () => {
     return (
         <div className='p-4 h-[max-content]'>
-            <div className='flex-wrap flex  mb-[5em] mt-7'>
+            <div className='flex-wrap flex mb-[5em]'>
 
                 <div className='w-full flex flex-row items-center justify-between'>
                     <p className='font-black text-xl'>Project stats</p>
@@ -26,7 +27,8 @@ const MainPage = () => {
 
                 <div className='pro-stat-container'>
 
-                    <div className='grid-one bg-white p-4 rounded'>
+                    {/* Grid one */}
+                    <div className='grid-one bg-white px-4 py-2 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Average PR size</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -40,9 +42,9 @@ const MainPage = () => {
                                     <span className='font-black text-xl'>268</span>
                                     <span className='ml-1 text-sm text-greyTxt'>Lines</span>
                                 </div>
-                                <p className='text-sm text-greyTxt font-bold'>Line Change</p>
+                                <p className='text-sm mt-2 text-greyTxt font-bold'>Line Change</p>
 
-                                <div className='mt-5 gap-1 p-2 bg-greenOpa text-[#4DBD98] w-[fit-content] flex flex-row items-center'>
+                                <div className='mt-8 gap-1 p-2 bg-greenOpa text-[#4DBD98] w-[fit-content] flex flex-row items-center'>
                                     <NorthOutlinedIcon className="text-sm" color='inherit' />
                                     <p className='text-sm font-bold'>24%</p>
                                 </div>
@@ -53,7 +55,7 @@ const MainPage = () => {
                                     <span className='font-black text-xl'>240</span>
                                     <span className='ml-1 text-sm text-greyTxt'>kb</span>
                                 </div>
-                                <p className='text-sm text-greyTxt font-bold'>Size</p>
+                                <p className='text-sm mt-2 text-greyTxt font-bold'>Size</p>
                             </div>
 
                         </div>
@@ -61,7 +63,7 @@ const MainPage = () => {
                     </div>
 
                     {/* grid two */}
-                    <div className='grid-two bg-white p-4 rounded'>
+                    <div className='grid-two bg-white px-4 py-2 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className='w-[max-content]'>Average Ticket Duration</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -75,9 +77,9 @@ const MainPage = () => {
                                     <span className='font-black text-xl'>36</span>
                                     <span className='ml-1 text-sm text-greyTxt'>hours</span>
                                 </div>
-                                <p className='text-sm text-greyTxt font-bold'>Hours worked</p>
+                                <p className='text-sm mt-2 text-greyTxt font-bold'>Hours worked</p>
 
-                                <div className='mt-5 gap-1 p-2 bg-redOpa text-[#F15832] w-[fit-content] flex flex-row items-center'>
+                                <div className='mt-7 gap-1 p-2 bg-redOpa text-[#F15832] w-[fit-content] flex flex-row items-center'>
                                     <NorthOutlinedIcon className="text-sm" color='inherit' />
                                     <p className='text-sm font-bold'>79%</p>
                                 </div>
@@ -87,13 +89,13 @@ const MainPage = () => {
                     </div>
                     {/* grid three */}
 
-                    <div className='grid-three bg-white p-4 rounded'>
+                    <div className='grid-three bg-white px-4 py-2 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Average Ticket Duration</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
                         </div>
 
-                        <div className='flex gap-3 flex-row'>
+                        <div className='flex gap-5 flex-row'>
                             <div className='mt-5'>
                                 <span className='font-black text-xl'>968</span>
                                 <span className='ml-1 text-sm text-greyTxt'>hours</span>
@@ -110,8 +112,8 @@ const MainPage = () => {
                             </div>
                         </div>
 
-                        <div className='w-full mt-4'>
-                            <Image src={graph} width={400} height={50} alt="" />
+                        <div className='w-full mt-2'>
+                            <Image src={graph} width={430} height={50} alt="" />
                         </div>
 
                         {/*  */}
@@ -130,14 +132,14 @@ const MainPage = () => {
                             </div>
 
                             <div className='flex flex-col flex-1 gap-3 w-full'>
-                                <div className=' flex justify-start items-center flex-row  gap-2'>
+                                <div className='flex justify-start items-center flex-row gap-2'>
                                     <Image src={blackDot} width={15} height={15} alt="" />
-                                    <p className=''>Idle Time</p>
+                                    <p className=''>15% Rework</p>
                                 </div>
 
-                                <div className=' flex justify-start items-center flex-row gap-2'>
-                                    <Image src={purpleDot} width={15} height={15} alt="" />
-                                    <p className=''>Deployment</p>
+                                <div className='flex justify-start items-center flex-row gap-2'>
+                                    <Image src={orangeDot} width={15} height={15} alt="" />
+                                    <p className=''>20% Bugs </p>
                                 </div>
                             </div>
 
@@ -146,7 +148,7 @@ const MainPage = () => {
                     </div>
 
                     {/* grid four */}
-                    <div className='grid-four bg-white p-4'>
+                    <div className='grid-four bg-white px-4 py-2 rounded-xl'>
                         <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <p className=''>Cycle Time</p>
                             <InfoOutlinedIcon className='text-greyTxt text-[16px] cursor-pointer' />
@@ -181,7 +183,7 @@ const MainPage = () => {
                     </div>
 
                     {/* grid five */}
-                    <div className='grid-five bg-white p-4 rounded'>
+                    <div className='grid-five bg-white px-4 py-2 rounded-xl'>
                         <div className='justify-between items-center text-[#03293D] gap-3 text-sm flex flex-row py-2 border-b border-light'>
                             <div className='items-center text-[#03293D] gap-3 text-sm flex flex-row'>
                                 <p className=''>Idle Time Breakdown</p>
